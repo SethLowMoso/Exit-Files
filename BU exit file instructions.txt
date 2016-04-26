@@ -1,0 +1,25 @@
+Exit file process and documentation.
+ 
+1.	Setup the following directory on your C:\
+a.	C:\Exits
+2.	Unzip the file to extract the SQL Scripts, Make sure your exit SQL scripts end up in the C:\Exits directory
+3.	Double click on the Exit.ps1 file, it should open in NotePad or NotePad++
+4.	You will be looking for several settings at this point.
+a.	-ServerInstance 
+i.	Moso-smbdb01.mosodomain.com (OR another server if yours isn't here)
+b.	-Database
+i.	This should be your tenant
+c.	-Username
+i.	Your username you use to access this database
+d.	-Password
+i.	Your password you use to access this database
+5.	Click on the Start Menu and in the search block enter "PowerShell"
+6.	From the results, right click on the "Windows Powershell (x86)", choose the "Run as Administrator" option
+7.	Enter: set-executionpolicy remotesigned
+8.	It will ask you if you are sure, enter "Y"
+9.	ENTER: cd C:\Exits
+10.	ENTER: .\Exit.ps1
+11.	*Detokenize if needed
+12.	Send the Exit files to the User in question  https://transfer.mosotionsoft.net
+ 
+* Detokenization can be done by Dinesh or Kreg. So once the accounts document is completed executing you can communicate with then to get it corrected. 
